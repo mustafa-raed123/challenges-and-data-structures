@@ -7,3 +7,7 @@
  #*Most Frequent Number*#
 
 ![](./frequentArray.jpg)
+
+ #*Maximum Value*#
+
+![](./newmax.jpg)
