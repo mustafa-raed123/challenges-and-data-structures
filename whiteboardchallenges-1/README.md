@@ -1,6 +1,9 @@
 # whiteboard-challenges-1
-  *ArrayReversal*
+  #*ArrayReversal*#
+
+
 ![](./arrReversal.jpg)
 
- *Most Frequent Number*
+ #*Most Frequent Number*#
+
 ![](./frequentArray.jpg)
