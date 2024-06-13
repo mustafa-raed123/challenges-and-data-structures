@@ -11,3 +11,8 @@
  #*Maximum Value*#
 
 ![](./newmax.jpg)
+
+
+ #*Remove middle Value*#
+
+![](./removemiddlevalue.jpg)
