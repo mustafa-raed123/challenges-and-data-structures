@@ -16,3 +16,8 @@
  #*Remove middle Value*#
 
 ![](./removemiddlevalue.jpg)
+
+
+ #*middle Value*#
+
+![](./middlevalue.jpg)
