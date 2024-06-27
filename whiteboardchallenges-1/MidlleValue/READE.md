@@ -1,0 +1,3 @@
+ #*middle Value*#
+
+![](./middlevalue.jpg)
