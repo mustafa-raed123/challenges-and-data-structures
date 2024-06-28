@@ -12,6 +12,10 @@
  *Most-Frequent-Number*
 ![Most-Frequent-Number](./whiteboardchallenges-1/Most-Frequent-Number/README.md)
 ##
-*RemoveMiddleValue**
+*RemoveMiddleValue*
 ![RemoveMiddleValue](./whiteboardchallenges-1/RemoveMiddleValue/README.md)
+##
+
+*FindDuplicate* 
+![FindDuplicate](./Challenges/FindDuplicate/FindDuplicate/README.md)
 ##
