@@ -9,4 +9,4 @@
 
 # Output
 
-![Output](./outPut.jpg)
+[Output](./outPut.jpg)
