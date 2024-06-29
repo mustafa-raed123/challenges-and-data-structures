@@ -1,21 +1,28 @@
 # whiteboard-challenges
 
   *ArrayReversal*
-![ArrayReversal](./whiteboardchallenges-1/arrReversal/README.md)
+[ArrayReversal](./whiteboardchallenges-1/arrReversal/README.md)
 ##
  *Maximum*
-![Maximum-Value](./whiteboardchallenges-1/Maximum-Value/README.md)
+[Maximum-Value](./whiteboardchallenges-1/Maximum-Value/README.md)
 ##
  *MidlleValue*
-![MidlleValue](./whiteboardchallenges-1/MidlleValue/README.md)
+[MidlleValue](./whiteboardchallenges-1/MidlleValue/README.md)
 ##
  *Most-Frequent-Number*
-![Most-Frequent-Number](./whiteboardchallenges-1/Most-Frequent-Number/README.md)
+[Most-Frequent-Number](./whiteboardchallenges-1/Most-Frequent-Number/README.md)
 ##
 *RemoveMiddleValue*
-![RemoveMiddleValue](./whiteboardchallenges-1/RemoveMiddleValue/README.md)
+[RemoveMiddleValue](./whiteboardchallenges-1/RemoveMiddleValue/README.md)
 ##
 
+
 *FindDuplicate* 
-![FindDuplicate](./Challenges/FindDuplicate/FindDuplicate/README.md)
+ [FindDuplicate](./Challenges/FindDuplicate/FindDuplicate/README.md)
+##
+
+
+*Common-Elements* 
+[Common Elements](./Challenges/Common-Elements/Common-Elements/README.md)
+
 ##
