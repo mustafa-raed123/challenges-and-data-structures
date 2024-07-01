@@ -6,7 +6,7 @@ namespace CommonElementsTest
     {
 
 
-        [Fact]        
+        [Fact]
         public void CommonElements()
         {
             //Arrange

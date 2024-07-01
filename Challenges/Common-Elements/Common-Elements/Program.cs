@@ -4,8 +4,8 @@
     {
         static void Main(string[] args)
         {
-            int[] arr1 = { 1,2,3,4,5 };
-            int[] arr2 = { 4,5,6,7};
+            int[] arr1 = { 1,2,3,4,5,4 };
+            int[] arr2 = { 4,5,6,7,4};
 
             int[] arr3 = { 4,6,7,8,9};
             List<int> list1 = CommonElements(arr1,arr2);
@@ -14,10 +14,11 @@
             PrintArray(arr2, arr3, list2);
 
         }
+       
         public static void PrintArray(int[] arr1 , int[] arr2, List<int> list)
         {
             Console.Write("Input ==> ");
-            Console.Write("[");
+            Console.WriteLine("[");
             for (int i = 0; i < arr1.Length; i++)
             {
                 if (i == arr1.Length - 1)
@@ -60,6 +61,7 @@
             Console.WriteLine("]");
             Console.WriteLine("==============================");
         }
+      
         public static List<int> CommonElements(int[] arr1, int[] arr2)
       {
             List<int> list = new List<int>();
