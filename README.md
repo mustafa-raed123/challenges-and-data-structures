@@ -30,7 +30,7 @@
 </p>
 <hr>
 
-<p style="font-size: 2px;">
+<p style="font-size: 2px; ">
   Common-Elements: <a href="./Challenges/Common-Elements/Common-Elements/README.md" style="text-decoration: none;">Common Elements</a>
 </p>
 <hr>
