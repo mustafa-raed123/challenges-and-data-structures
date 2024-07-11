@@ -1,8 +1,8 @@
 # whiteboard-challenges
 
-<p style="font-size: 20px;">
-  ArrayReversal: <a href="./whiteboardchallenges-1/arrReversal/README.md" style="text-decoration: none;">ArrayReversal</a>
-</p>
+<h1><span style="color: #009989;"> Challenge One : </span> ArrayReversal:</h1>
+<p style="margin-bottom: 0;"><a href="./whiteboardchallenges-1/arrReversal/README.md" style="text-decoration: none; font-size: 24px;">ArrayReversal</a></p>
+
 <hr>
 
 <p style="font-size: 20px;">
