@@ -16,7 +16,7 @@
 
 # WhiteBoard For Remove Method
 
-![Remove](./Images/REmove().jpg)
+![Remove](./Images/Remove().jpg)
 
 # Code in C#
 
