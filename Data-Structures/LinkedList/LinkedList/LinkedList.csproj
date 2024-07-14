@@ -8,7 +8,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="RemoveDublicate\" />
+    <Compile Remove="RemoveDublicate\**" />
+    <EmbeddedResource Remove="RemoveDublicate\**" />
+    <None Remove="RemoveDublicate\**" />
   </ItemGroup>
 
 </Project>

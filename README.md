@@ -35,3 +35,6 @@
 ---
 
 # Data Structure: [Linked List](./Data-Structures/LinkedList/LinkedList/ReadMe.md)
+
+---
+# Data Structure: [Remove Duplicate in Linked List](./Data-Structures/LinkedList/LinkedList/RemoveDuplicate/ReadMe.md)
