@@ -111,5 +111,23 @@ namespace LinkedList
             }
             Console.WriteLine("---> null");
         }
+        public void RemoveDublicate()
+        {
+            if (head == null) return;
+            Node current = head;
+            while (current.Next != null)
+            {
+                if (current.Data == current.Next.Data)
+                {
+                    current.Next = current.Next.Next;
+                }
+                else
+                {
+                    current = current.Next;
+                }
+
+            }
+
+        }
     }
 }
