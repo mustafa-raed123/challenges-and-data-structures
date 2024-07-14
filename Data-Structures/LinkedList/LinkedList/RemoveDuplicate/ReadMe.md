@@ -6,4 +6,4 @@
 
 # Output
 
-![RemoveDlicateOutput](./Output.png)
+![RemoveDlicateOutput](./OutPut.jpg)
