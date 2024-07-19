@@ -4,6 +4,6 @@
 # MergeSorted
 ![MergeSortedLists](./WhiteBoardMerge.jpg)
 
-# Output
 
+# Output
 ![Output](./OutputMerge.png)

@@ -41,4 +41,5 @@
 
 ---
 
-# Data Structure: [Merge Sorted in Linked List](./Data-Structures/LinkedList/LinkedList/MergeSorted/ReadMe.md)
+# Data Structure: [Merge Sorted in Linked List](./Data-Structures/LinkedList/LinkedList/MergeSorted/README.md)
+---
