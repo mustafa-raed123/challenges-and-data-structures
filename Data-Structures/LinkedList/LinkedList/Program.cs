@@ -28,10 +28,10 @@
             linkedList1.InsertToTail(6);
             linkedList1.InsertToTail(22);
             LinkedLists linkedList2 = new LinkedLists();
-            //linkedList2.InsertToTail(2);
-            //linkedList2.InsertToTail(10);
-            //linkedList2.InsertToTail(7);
-            //linkedList2.InsertToTail(5);
+            linkedList2.InsertToTail(2);
+            linkedList2.InsertToTail(10);
+            linkedList2.InsertToTail(7);
+            linkedList2.InsertToTail(5);
             Console.WriteLine("\t\t\t\tLinkedList1 Before Sorted ");
             Console.WriteLine();
             linkedList1.PrintList();

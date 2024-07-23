@@ -98,7 +98,7 @@ namespace LinkedList
         }
         public void PrintList()
         {
-            Console.WriteLine(count);
+            
             Console.Write("\t\tHead ----> ");
             Node nn = head;
             while (nn != null)
