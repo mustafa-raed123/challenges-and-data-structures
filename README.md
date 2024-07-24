@@ -34,12 +34,18 @@
 
 ---
 
-# Data Structure: *[Linked List](./Data-Structures/LinkedList/LinkedList/ReadMe.md)*
+# Data Structure-LinkedList: *[Linked List](./Data-Structures/LinkedList/LinkedList/ReadMe.md)*
 
 ---
-# Data Structure: *[Remove Duplicate in Linked List](./Data-Structures/LinkedList/LinkedList/RemoveDuplicate/ReadMe.md)*
+# Data Structure-LinkedList: *[Remove Duplicate in Linked List](./Data-Structures/LinkedList/LinkedList/RemoveDuplicate/ReadMe.md)*
 
 ---
 
-# Data Structure: *[Merge Sorted in Linked List](./Data-Structures/LinkedList/LinkedList/MergeSorted/README.md)*
+# Data Structure-LinkedList: *[Merge Sorted in Linked List](./Data-Structures/LinkedList/LinkedList/MergeSorted/README.md)*
+---
+
+# Data Structure-Stack:  *[stack-Implementation](./Data-Structures/Stack&Queue/Stack&Queue/Stack/README.md)*
+---
+
+# Data Structure-Queue:  *[Queue-Implementation](./Data-Structures/Stack&Queue/Stack&Queue/Queue/README.md)*
 ---
