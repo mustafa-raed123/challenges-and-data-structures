@@ -51,6 +51,6 @@
 
 ---
 
-# Data Structue-Stack:  *[reverse-StackUsingQueue](./Data-Structures/Stack&Queue/Stack&Queue/stack/ReverseStackUsingQueue/README.md)*
+# Data Structue-Stack:  *[reverse-StackUsingQueue](./Data-Structures/Stack&Queue/Stack&Queue/Stack/ReverseStackUsingQueue/README.md)*
 
 ---
