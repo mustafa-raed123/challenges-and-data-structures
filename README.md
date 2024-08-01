@@ -44,8 +44,12 @@
 # Data Structure-LinkedList: *[Merge Sorted in Linked List](./Data-Structures/LinkedList/LinkedList/MergeSorted/README.md)*
 ---
 
-# Data Structure-Stack:  *[stack-Implementation](./Data-Structures/Stack&Queue/Stack&Queue/Stack/README.md)*
+# Data Structure-Queue:  *[Queue-Implementation](./Data-Structures/Stack&Queue/Stack&Queue/Queue/README.md)*
 ---
 
-# Data Structure-Queue:  *[Queue-Implementation](./Data-Structures/Stack&Queue/Stack&Queue/Queue/README.md)*
+# Data Structure-Stack:  *[stack-Implementation](./Data-Structures/Stack&Queue/Stack&Queue/Stack/README.md)*
+
+---
+
+# Data Structue-Stack:  *[reverse-StackUsingQueue](./Data-Structures/Stack&Queue/Stack&Queue/stack/ReverseStackUsingQueue/README.md)*
 ---

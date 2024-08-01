@@ -7,11 +7,11 @@ using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace Stack_Queue.Queue
 {
-    public class Queue
+    public class queue
     {
         private Node first { get; set; }
         private Node last { get; set; }
-        public Queue()
+        public queue()
         {
             first = last = null!;
         }
