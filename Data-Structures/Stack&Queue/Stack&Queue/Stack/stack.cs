@@ -23,17 +23,17 @@ namespace Stack_Queue.Stack
         }
         public int Pop()
         {
-            if (ISEmpty()) throw new Exception(" THe Stack is Empty ");           
+            if (IsEmpty()) throw new Exception(" THe Stack is Empty ");           
             int data = top.Data;
             top = top.Next;
             return data;
         }
         public int Peek()
         {
-           if (ISEmpty()) throw new Exception(" THe Stack is Empty ");   
+           if (IsEmpty()) throw new Exception("The Stack is Empty");   
             return top.Data;
         }
-        public bool ISEmpty()=> top == null;
+        public bool IsEmpty()=> top == null;
         public void Print()
         {
             Node node = top;

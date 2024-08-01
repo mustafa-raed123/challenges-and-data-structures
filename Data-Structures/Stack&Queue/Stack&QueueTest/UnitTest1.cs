@@ -19,12 +19,12 @@ namespace Stack_QueueTest
             Assert.Equal(2,stack.Peek() );
             stack.Pop();
             stack.Pop();
-            Assert.True(stack.ISEmpty());
+            Assert.True(stack.IsEmpty());
         }
         [Fact]
         public void TestQueueImplementation()
         {
-            Queue queue = new Queue();
+            queue queue = new queue();
             queue.Enqueue(1);
             queue.Enqueue(2);
             queue.Enqueue(3);
