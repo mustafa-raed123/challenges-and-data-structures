@@ -8,24 +8,31 @@ namespace Stack_Queue.Stack
 {
     public class stack
     {
-        private Node top;
+        public Node top;
+          
 
         public stack()
         {
             top = null!;
+
+            
+
         }
         public int Push(int data)
         {
             Node newnode = new Node(data);
             newnode.Next = top;
             top = newnode;
+            
             return data;
+
         }
         public int Pop()
         {
             if (IsEmpty()) throw new Exception(" THe Stack is Empty ");           
             int data = top.Data;
             top = top.Next;
+ 
             return data;
         }
         public int Peek()
@@ -45,5 +52,6 @@ namespace Stack_Queue.Stack
             Console.WriteLine("null");
             Console.WriteLine();
         }
+  
     }
 }
