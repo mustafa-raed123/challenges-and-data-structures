@@ -54,3 +54,5 @@
 # Data Structue-Stack:  *[reverse-StackUsingQueue](./Data-Structures/Stack&Queue/Stack&Queue/Stack/ReverseStackUsingQueue/README.md)*
 
 ---
+
+# Data Structue-Stack:  *[Remove-Middle-Element](./Data-Structures/Stack&Queue/Stack&Queue/Stack/Delete-Milddle-Element-Stack/README.md)*

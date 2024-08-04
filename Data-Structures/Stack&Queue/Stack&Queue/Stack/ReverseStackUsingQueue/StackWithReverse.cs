@@ -5,7 +5,7 @@ namespace Stack_Queue.Stack.ReverseStackUsingQueue
     public class StackWithReverse : stack
     {
         queue newqueue = new queue();
-        //    stack stack = new stack();
+
 
         public void ReverseStack()
         {
@@ -21,6 +21,7 @@ namespace Stack_Queue.Stack.ReverseStackUsingQueue
                 int Dequeue = newqueue.Dequeue();
                 Push(Dequeue);
             }
+        
         }
     }
 }
