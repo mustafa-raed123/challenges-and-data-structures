@@ -4,43 +4,51 @@
     {
         static void Main(string[] args)
         {
-                  string Sentence1 = "csharp is programming language";
-                  string Reverse1 = ReverseWords(Sentence1);
-                   PrintArray(Sentence1, Reverse1);
-                   string Sentence2 = "Reverse the words in this sentence";
-                    string Reverse2=  ReverseWords(Sentence2);
-                    PrintArray(Sentence2, Reverse2);
+            //          string Sentence1 = "csharp is programming language";
+            //          string Reverse1 = ReverseWords(Sentence1);
+            //           PrintArray(Sentence1, Reverse1);
+            //           string Sentence2 = "Reverse the words in this sentence";
+            //            string Reverse2=  ReverseWords(Sentence2);
+            //            PrintArray(Sentence2, Reverse2);
 
 
-            
-        }
-        public static void PrintArray(string Sentence, string Reverse)
-        {
-           
 
-            Console.Write("Input ==> " );
-            Console.WriteLine(Sentence);
+            //}
+            //public static void PrintArray(string Sentence, string Reverse)
+            //{
 
 
-            Console.Write("Output ==> ");
-            
-
-            Console.WriteLine(Reverse);
+            //    Console.Write("Input ==> " );
+            //    Console.WriteLine(Sentence);
 
 
-            Console.WriteLine("==============================");
-            
-        }
+            //    Console.Write("Output ==> ");
 
-        public static string ReverseWords(string words)
-        {
-            string[] SpllitSentence = words.Split(' ');
-            List<string> ReverseString = new List<string> { } ;
-            for (int i = 1; i <= SpllitSentence.Length ; i++)
+
+            //    Console.WriteLine(Reverse);
+
+
+            //    Console.WriteLine("==============================");
+
+            //}
+
+            //public static string ReverseWords(string words)
+            //{
+            //    string[] SpllitSentence = words.Split(' ');
+            //    List<string> ReverseString = new List<string> { } ;
+            //    for (int i = 1; i <= SpllitSentence.Length ; i++)
+            //    {
+            //     ReverseString.Add(SpllitSentence[SpllitSentence.Length-i]);
+            //    }
+            //    return string.Join(" ", ReverseString) ;
+            // }
+            var range = Enumerable.Range(1, 122);
+
+            // Display the sequence
+            foreach (var number in range)
             {
-             ReverseString.Add(SpllitSentence[SpllitSentence.Length-i]);
+                Console.WriteLine(number);
             }
-            return string.Join(" ", ReverseString) ;
-         }
+        }
     }
 }
