@@ -49,8 +49,8 @@ namespace Stack_Queue.Stack
                 Console.Write($"[{node.Data}] -> ");
                 node = node.Next;
             }
-            Console.WriteLine("null");
-            Console.WriteLine();
+            Console.Write("null");
+            
         }
   
     }
