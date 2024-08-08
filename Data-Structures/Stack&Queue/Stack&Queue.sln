@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Stack&QueueTest", "Stack&Qu
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ReverseStackTest", "ReverseStackTest\ReverseStackTest.csproj", "{036F49DD-C8F8-42EF-B3B0-8D7A96AF2F30}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RemoveMiddleElementTest", "RemoveMiddleElementTest\RemoveMiddleElementTest.csproj", "{3901B4C1-32D9-40ED-9B51-83133FC42F49}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RemoveMiddleElementTest", "RemoveMiddleElementTest\RemoveMiddleElementTest.csproj", "{3901B4C1-32D9-40ED-9B51-83133FC42F49}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MinElementTest", "MinElementTest\MinElementTest.csproj", "{75E552A2-A16D-475D-8A2B-0A6C94191BE0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{3901B4C1-32D9-40ED-9B51-83133FC42F49}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3901B4C1-32D9-40ED-9B51-83133FC42F49}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3901B4C1-32D9-40ED-9B51-83133FC42F49}.Release|Any CPU.Build.0 = Release|Any CPU
+		{75E552A2-A16D-475D-8A2B-0A6C94191BE0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75E552A2-A16D-475D-8A2B-0A6C94191BE0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{75E552A2-A16D-475D-8A2B-0A6C94191BE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{75E552A2-A16D-475D-8A2B-0A6C94191BE0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -2,6 +2,7 @@
 using Stack_Queue.Queue;
 using Stack_Queue.Stack.ReverseStackUsingQueue;
 using Stack_Queue.Stack.Delete_Milddle_Element_Stack;
+using Stack_Queue.Stack.MinStack;
 namespace Stack_Queue
 {
     internal class Program
@@ -32,25 +33,25 @@ namespace Stack_Queue
             //stackWithReverse.ReverseStack();
 
 
-            StackWithDeleteMiddle stack = new StackWithDeleteMiddle();
-            stack.Push(7);
-            stack.Push(14);
-            stack.Push(3);
-            stack.Push(8);
-            stack.Push(5);
+            //StackWithDeleteMiddle stack = new StackWithDeleteMiddle();
+            //stack.Push(7);
+            //stack.Push(14);
+            //stack.Push(3);
+            //stack.Push(8);
+            //stack.Push(5);
 
-            stack.Print(); // Stack: Top -> 5 -> 8 -> 3 -> 14 -> 7
-            stack.DeleteMiddle();
-            Console.WriteLine("After deleting middle element");
-            stack.Print(); // Stack: Top -> 5 -> 8 -> 14 -> 7
-            stack.Push(2);
-            stack.Push(9);
-            stack.Push(11);
-            stack.Print(); // Stack: Top -> 11 -> 9 -> 2 -> 5 -> 8 -> 14 -> 7
-            Console.WriteLine("After deleting middle element");
+            //stack.Print(); // Stack: Top -> 5 -> 8 -> 3 -> 14 -> 7
+            //stack.DeleteMiddle();
+            //Console.WriteLine("After deleting middle element");
+            //stack.Print(); // Stack: Top -> 5 -> 8 -> 14 -> 7
+            //stack.Push(2);
+            //stack.Push(9);
+            //stack.Push(11);
+            //stack.Print(); // Stack: Top -> 11 -> 9 -> 2 -> 5 -> 8 -> 14 -> 7
+            //Console.WriteLine("After deleting middle element");
 
-            stack.DeleteMiddle();
-            stack.Print(); // Stack: Top -> 11 -> 9 -> 2 -> 8 -> 14 -> 7
+            //stack.DeleteMiddle();
+            //stack.Print(); // Stack: Top -> 11 -> 9 -> 2 -> 8 -> 14 -> 7
 
 
 
@@ -70,7 +71,36 @@ namespace Stack_Queue
             //Console.WriteLine();        
             //Console.Write("\t\tThe Queue Items ==>");
             //queue.Print();
+            MinStack minStack = new MinStack();
+            // Push elements
+            minStack.Push(15); // Top -> 15 (min: 15)
+            minStack.Print();
+            Console.WriteLine($"   ├--min: {minStack.GetMin()}");
+            minStack.GetMin();
 
+            minStack.Push(7);  // Top -> 7 -> 15 (min: 7) 
+            minStack.Print();
+
+            Console.WriteLine($"   ├--min: {minStack.GetMin()}");
+
+
+            minStack.Push(12); // Top -> 12 -> 7 -> 15 (min: 7)
+            minStack.Print();
+
+            Console.WriteLine($"   ├--min: {minStack.GetMin()}");
+
+
+            minStack.Push(3);  // Top -> 3 -> 12 -> 7 -> 15 (min: 3) 
+            minStack.Print();
+
+
+            Console.WriteLine($"   ├--min: {minStack.GetMin()}");
+
+
+            Console.WriteLine("Pop a node from the stack");
+             minStack.Pop(); // popped: 3
+            minStack.Print(); // Output: Top -> 12 -> 7 -> 15
+            Console.WriteLine($"   ├--min: {minStack.GetMin()}");
 
 
         }
