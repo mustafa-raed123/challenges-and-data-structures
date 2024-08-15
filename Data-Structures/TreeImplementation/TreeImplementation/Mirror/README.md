@@ -2,7 +2,7 @@
 
 # WhiteBoard
 
-![WhiteBoard](./WhiteBoard.jpg)
+![WhiteBoard](./WhiteBoard.png)
 
 # Output
 
