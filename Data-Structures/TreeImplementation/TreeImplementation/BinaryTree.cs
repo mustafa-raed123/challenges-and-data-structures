@@ -1,14 +1,16 @@
 ﻿using System.Text;
+using System.Xml.Linq;
 using TreeImplementation;
 
-public class BinaryTree
+public class BinaryTree : BinarySearchTree
 {
     private StringBuilder _output;
-
-    public BinaryTree(StringBuilder output = null)
+    public BinaryTree(int data, StringBuilder output = null) : base(data)
     {
         _output = output;
     }
+
+
 
     public void Pre_Order(TNode node)
     {
@@ -37,8 +39,8 @@ public class BinaryTree
         Print(node.data, ConsoleColor.Green, "->");
     }
 
-    public void Print(int data, ConsoleColor color = 
-        ConsoleColor.White,string delimiter = "-->")
+    public string Print(int data, ConsoleColor color =
+        ConsoleColor.White, string delimiter = "-->")
     {
         string output = $"{data}{delimiter}";
 
@@ -52,5 +54,24 @@ public class BinaryTree
             Console.Write(output);
             Console.ResetColor();
         }
+            return output;
+
+    }
+    public void Mirror()
+    {
+        MirrorHelper(Root);
+    }
+
+    private void MirrorHelper(TNode node)
+    {
+        if (node == null)
+        {
+            return;
+        }     
+        MirrorHelper(node.left);
+        MirrorHelper(node.right);     
+        TNode temp = node.left;
+        node.left = node.right;
+        node.right = temp;
     }
 }
