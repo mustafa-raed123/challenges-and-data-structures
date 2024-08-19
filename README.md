@@ -69,3 +69,7 @@
 
 # Data Structue-BinaryTree:  *[Mirror](./Data-Structures/TreeImplementation/TreeImplementation/Mirror/README.md)*
 
+---
+
+# Data Structue-BinaryTree:  *[Second Max Value](./Data-Structures/TreeImplementation/TreeImplementation/SecondMaxValue/README.md)*
+

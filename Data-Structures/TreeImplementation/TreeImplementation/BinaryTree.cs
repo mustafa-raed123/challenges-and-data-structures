@@ -74,4 +74,29 @@ public class BinaryTree : BinarySearchTree
         node.left = node.right;
         node.right = temp;
     }
+    public int? SecondMax(TNode node)
+    {
+        if(node == null)  throw new Exception("the node is null");
+        int? max = null;
+        int? secondmax = null;
+        TraverseTree(node ,ref max, ref secondmax);
+        if (secondmax == null)
+        {
+            throw new InvalidOperationException("Not Fount");
+        }
+        return secondmax;
+    }
+    public void TraverseTree(TNode node , ref int?  max ,ref int? secondmax)
+    {
+        if (node == null) return;
+
+        TraverseTree(node.left, ref max, ref secondmax);
+        if(max == null || node.data > max)
+        {
+            secondmax = max;
+            max = node.data;
+        }
+
+        TraverseTree(node.right, ref max, ref secondmax);
+    }
 }
