@@ -49,14 +49,26 @@ namespace TreeImplementation
             Btree.Root.right = new TNode(7);
             Btree.Root.left.left = new TNode(12);
             Btree.Root.left.right = new TNode(9);
+            Btree.Root.left.right = new TNode(10);
+            Btree.Root.left.right = new TNode(13);
+            Btree.Insert(13);
+            Btree.Insert(15);
+            Btree.Insert(16);
+            Btree.Insert(17);
+          
             Console.WriteLine("InOrder - Treversal");
-            Btree.In_Order(Btree.Root);
-            Btree.Mirror();
+            Btree.Pre_Order(Btree.Root);
             Console.WriteLine();
-            Console.WriteLine("Arter Using Mirror method");
+            Console.WriteLine("The Second Max Vaalue is");
+            Console.WriteLine();
+            Console.WriteLine(Btree.SecondMax(Btree.Root));
+            //Btree.In_Order(Btree.Root);
+            //Btree.Mirror();
+            //Console.WriteLine();
+            //Console.WriteLine("Arter Using Mirror method");
 
-            Console.WriteLine();
-            Btree.In_Order(Btree.Root);
+            //Console.WriteLine();
+            //Btree.In_Order(Btree.Root);
 
         }
     }
