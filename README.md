@@ -73,3 +73,7 @@
 
 # Data Structue-BinaryTree:  *[Second Max Value](./Data-Structures/TreeImplementation/TreeImplementation/SecondMaxValue/README.md)*
 
+---
+
+# Data Structue-BinaryTree:  *[Sum of All Leaf ](./Data-Structures/TreeImplementation/TreeImplementation/LeafSum/README.md)*
+
