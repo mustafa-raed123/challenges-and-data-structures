@@ -6,7 +6,7 @@
 
 # Code
 
-![Whiteboard](./Code.jpg)
+![Whiteboard](./code.jpg)
 
 # Output
 
