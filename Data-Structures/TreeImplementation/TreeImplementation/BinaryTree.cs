@@ -140,5 +140,35 @@ namespace TreeImplementation
             
             return LeafSumHelper(node.left) + LeafSumHelper(node.right);
         }
+        public List<int> LargestValueEachLevel()
+        {
+            List<int> largestValues = new List<int>();
+            if (Root == null) return largestValues;
+
+            Queue<TNode> queue = new Queue<TNode>();
+            queue.Enqueue(Root);
+
+            while (queue.Count > 0)
+            {
+                int levelSize = queue.Count;
+                int maxAtLevel = int.MinValue;
+
+                for (int i = 0; i < levelSize; i++)
+                {
+                    var currentNode = queue.Dequeue();
+                    if (currentNode.data > maxAtLevel)
+                    {
+                        maxAtLevel = currentNode.data;
+                    }
+
+                    if (currentNode.left != null) queue.Enqueue(currentNode.left);
+                    if (currentNode.right != null) queue.Enqueue(currentNode.right);
+                }
+
+                largestValues.Add(maxAtLevel);
+            }
+
+            return largestValues;
+        }
     }
 }
