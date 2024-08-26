@@ -79,27 +79,43 @@ namespace TreeImplementation
 
             //Console.WriteLine();
             //Btree.In_Order(Btree.Root);
-            BinaryTree Btree = new BinaryTree(4);
-           
+            //BinaryTree Btree = new BinaryTree(4);
 
-            Btree.Root = new TNode(9);
-            Btree.Root.left = new TNode(8);
-            Btree.Root.right = new TNode(12);
+
+            //Btree.Root = new TNode(9);
+            //Btree.Root.left = new TNode(8);
+            //Btree.Root.right = new TNode(12);
+            //Btree.Root.left.left = new TNode(3);
+            //Btree.Root.left.right = new TNode(7);
+            //Btree.Root.right.left = new TNode(17);
+            //Btree.Root.right.right = new TNode(23);
+            //Btree.Root.left.left.right = new TNode(4);
+
+
+            //Console.WriteLine("Pre-Order Traversal:");
+            //Btree.Pre_Order(Btree.Root);
+            //Console.WriteLine();
+
+
+            //int leafSum = Btree.LeafSum();
+            //Console.WriteLine("The sum of all leaf nodes is:");
+            //Console.WriteLine(leafSum);
+            BinaryTree Btree = new BinaryTree(5);
+            
+            Btree.Root.left = new TNode(13);
+            Btree.Root.right = new TNode(7);
             Btree.Root.left.left = new TNode(3);
             Btree.Root.left.right = new TNode(7);
-            Btree.Root.right.left = new TNode(17);
-            Btree.Root.right.right = new TNode(23);
+            Btree.Root.right.left = new TNode(12);
+            Btree.Root.right.right = new TNode(20);
+            Btree.Root.left.left.left = new TNode(1);
             Btree.Root.left.left.right = new TNode(4);
+            Btree.Root.right.left.right = new TNode(11);
 
+            List<int> largestValues = Btree.LargestValueEachLevel();
 
-            Console.WriteLine("Pre-Order Traversal:");
-            Btree.Pre_Order(Btree.Root);
-            Console.WriteLine();
-
-            
-            int leafSum = Btree.LeafSum();
-            Console.WriteLine("The sum of all leaf nodes is:");
-            Console.WriteLine(leafSum);
+            // Print the largest values at each level
+            Console.WriteLine("Largest values at each level: " + string.Join(", ", largestValues));
 
         }
     }
