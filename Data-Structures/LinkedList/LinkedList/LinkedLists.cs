@@ -107,16 +107,16 @@ namespace LinkedList
 
             while (current != null)
             {
-              
+
                 Console.Write(current.Data);
 
                 if (current.Next != null)
-                    Console.Write(" --> "); 
+                    Console.Write(" --> ");
 
-                current = current.Next; 
+                current = current.Next;
             }
 
-            Console.WriteLine(" --> null"); 
+            Console.WriteLine(" --> null");
         }
 
         public void RemoveDublicate()
@@ -184,59 +184,49 @@ namespace LinkedList
 
 
         }
-        //public void RotateLeft(int K)
-        //{
-        //    Node node1 = head;          
-        //   Node node2 = head;
-        //    LinkedLists newlinkedList = new LinkedLists();
-
-        //    int i = 1;
-        //    while (node1 != null)
-        //    {
-        //        if (i <= K)
-        //        {
-        //            node1 = node1.Next;
-        //        }
-        //        else
-        //        {
-        //            newlinkedList.InsertToTail(node1.Data);
-        //            node1 = node1.Next;
-        //        }
-
-        //        i++;
-        //    }
-        //    while (i > K)
-        //    {
-
-        //        newlinkedList.InsertToTail(node2.Data);
-        //        node2 = node2.Next;
-        //       i--;
-        //    }
-        //        newlinkedList.PrintList();
-
-        //}
         public void RotateLeft(int K)
         {
-            if (head == null || head.Next == null || K == 0)
-                return;
-            Node current = head;
-            
-            while (current.Next != null)
+            if (head == null || K <= 0 || K > count)
+                return; 
+
+            Node node1 = head;
+            Node node2 = head;
+            int i = 1;
+
+            while (i <= K && node1 != null)
             {
-                current = current.Next;
-               
+                InsertToTail(node1.Data);
+                node1 = node1.Next;
+                i++;
             }
-            K = K % count;
-            if (K == 0)
-                return;
-            current.Next = head;
-            Node newTail = head;
-            for (int i = 1; i < count - K; i++)
-            {
-                newTail = newTail.Next;
-            }
-            head = newTail.Next;
-            newTail.Next = null;
+
+ 
+            head = node1;
         }
+
+       
+        //public void RotateLeft(int K)
+        //{
+        //    if (head == null || head.Next == null || K == 0)
+        //        return;
+        //    Node current = head;
+
+        //    while (current.Next != null)
+        //    {
+        //        current = current.Next;
+
+        //    }
+        //    K = K % count;
+        //    if (K == 0)
+        //        return;
+        //    current.Next = head;
+        //    Node newTail = head;
+        //    for (int i = 1; i < count - K; i++)
+        //    {
+        //        newTail = newTail.Next;
+        //    }
+        //    head = newTail.Next;
+        //    newTail.Next = null;
+        //}
     }
 }
