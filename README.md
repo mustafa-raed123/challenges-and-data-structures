@@ -83,5 +83,5 @@
 
 ---
 
-# Data Structure-LinkedList :  *[RotateLeft](./Data-Structures\LinkedList\LinkedList\RotateLinkedList\README.md)*
+# Data Structure-LinkedList :  *[RotateLeft](./Data-Structures/LinkedList/LinkedList/RotateLinkedList/README.md)*
 
