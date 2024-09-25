@@ -27,37 +27,44 @@
             linkedList1.InsertToTail(8);
             linkedList1.InsertToTail(6);
             linkedList1.InsertToTail(22);
-            LinkedLists linkedList2 = new LinkedLists();
-            linkedList2.InsertToTail(2);
-            linkedList2.InsertToTail(10);
-            linkedList2.InsertToTail(7);
-            linkedList2.InsertToTail(5);
-            Console.WriteLine("\t\t\t\tLinkedList1 Before Sorted ");
+            //LinkedLists linkedList2 = new LinkedLists();
+            //linkedList2.InsertToTail(2);
+            //linkedList2.InsertToTail(10);
+            //linkedList2.InsertToTail(7);
+            //linkedList2.InsertToTail(5);
+            //Console.WriteLine("\t\t\t\tLinkedList1 Before Sorted ");
+            //Console.WriteLine();
+            //linkedList1.PrintList();
+            //Console.WriteLine();
+
+            //Console.WriteLine("\t\t\t\tLinkedList1 After Sorted ");
+            //Console.WriteLine();
+            //linkedList1.sortLinkedList();
+            //Console.WriteLine();
+            //linkedList1.PrintList();
+            //Console.WriteLine();
+            //Console.WriteLine("\t\t\t\tLinkedList2 Before Sorted ");
+            //Console.WriteLine();
+            //Console.WriteLine();
+
+            //linkedList2.PrintList();
+            //Console.WriteLine();
+            //Console.WriteLine("\t\t\t\tLinkedList2 After Sorted ");
+            //Console.WriteLine();
+            //linkedList2.sortLinkedList();
+            //Console.WriteLine();    
+            //linkedList2.PrintList();
+            //Console.WriteLine();
+            //Console.WriteLine("\t\t\t\tLinked List After Merge");
+            //Console.WriteLine();
+            //linkedList1.MergeSortedLists(linkedList2);
+            //linkedList1.PrintList();
+            Console.WriteLine("\t\t\tLinkedList before Rotate");
             Console.WriteLine();
             linkedList1.PrintList();
             Console.WriteLine();
-
-            Console.WriteLine("\t\t\t\tLinkedList1 After Sorted ");
-            Console.WriteLine();
-            linkedList1.sortLinkedList();
-            Console.WriteLine();
-            linkedList1.PrintList();
-            Console.WriteLine();
-            Console.WriteLine("\t\t\t\tLinkedList2 Before Sorted ");
-            Console.WriteLine();
-            Console.WriteLine();
-
-            linkedList2.PrintList();
-            Console.WriteLine();
-            Console.WriteLine("\t\t\t\tLinkedList2 After Sorted ");
-            Console.WriteLine();
-            linkedList2.sortLinkedList();
-            Console.WriteLine();    
-            linkedList2.PrintList();
-            Console.WriteLine();
-            Console.WriteLine("\t\t\t\tLinked List After Merge");
-            Console.WriteLine();
-            linkedList1.MergeSortedLists(linkedList2);
+            Console.WriteLine("\t\t\tLinkedList After Rotate K = 3");
+            linkedList1.RotateLeft(3);
             linkedList1.PrintList();
 
         }
