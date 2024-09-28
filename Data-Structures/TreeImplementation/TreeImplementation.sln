@@ -11,7 +11,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MirrorTest", "MirrorTest\Mi
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SumLeafTest", "SumLeafTest\SumLeafTest.csproj", "{60D3047A-B57D-4089-9647-3E2215F1A821}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaxLevelTest", "MaxLevelTest\MaxLevelTest.csproj", "{BCBE4974-D73B-4CD9-9C86-FB6B8BA1D69A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MaxLevelTest", "MaxLevelTest\MaxLevelTest.csproj", "{BCBE4974-D73B-4CD9-9C86-FB6B8BA1D69A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Right_TreeTest", "Right_TreeTest\Right_TreeTest.csproj", "{9CE9F6D8-8134-4D09-BEFF-AED8ABEB0CC6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{BCBE4974-D73B-4CD9-9C86-FB6B8BA1D69A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BCBE4974-D73B-4CD9-9C86-FB6B8BA1D69A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BCBE4974-D73B-4CD9-9C86-FB6B8BA1D69A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9CE9F6D8-8134-4D09-BEFF-AED8ABEB0CC6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9CE9F6D8-8134-4D09-BEFF-AED8ABEB0CC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9CE9F6D8-8134-4D09-BEFF-AED8ABEB0CC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9CE9F6D8-8134-4D09-BEFF-AED8ABEB0CC6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

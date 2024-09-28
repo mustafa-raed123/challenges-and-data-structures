@@ -111,11 +111,10 @@ namespace TreeImplementation
             Btree.Root.left.left.left = new TNode(1);
             Btree.Root.left.left.right = new TNode(4);
             Btree.Root.right.left.right = new TNode(11);
-
-            List<int> largestValues = Btree.LargestValueEachLevel();
+            Btree.PrintRightView();
 
             // Print the largest values at each level
-            Console.WriteLine("Largest values at each level: " + string.Join(", ", largestValues));
+         //   Console.WriteLine("Largest values at each level: " + string.Join(", ", largestValues));
 
         }
     }
