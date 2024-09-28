@@ -22,11 +22,25 @@
             //  Console.WriteLine($"  ({linkedList.Includes(34)})");
             //  Console.ReadKey();
             LinkedLists linkedList1 = new LinkedLists();
-            linkedList1.InsertToTail(4);
-            linkedList1.InsertToTail(1);
             linkedList1.InsertToTail(8);
-            linkedList1.InsertToTail(6);
-            linkedList1.InsertToTail(22);
+            linkedList1.InsertToTail(3);
+            linkedList1.InsertToTail(1);
+            linkedList1.InsertToTail(4);
+            linkedList1.InsertToTail(4);
+            //linkedList1.InsertToTail(5);
+            //linkedList1.InsertToTail(6);
+            //linkedList1.InsertToTail(23);
+            //linkedList1.InsertToTail(5);
+            //linkedList1.InsertToTail(6);
+            //linkedList1.InsertToTail(6);
+            // linkedList1.InsertToPos(3, 9);
+            //  linkedList1.RemoveDuplicate();
+            // linkedList1.RemoveFromPos(6);
+            //  linkedList1.DeleteEvenNumber();
+            //linkedList1.repetition();
+           // linkedList1.RepetitionEvenNumberInLastList();
+           linkedList1.Reverse();
+            linkedList1.PrintList();
             //LinkedLists linkedList2 = new LinkedLists();
             //linkedList2.InsertToTail(2);
             //linkedList2.InsertToTail(10);
@@ -59,13 +73,13 @@
             //Console.WriteLine();
             //linkedList1.MergeSortedLists(linkedList2);
             //linkedList1.PrintList();
-            Console.WriteLine("\t\t\tLinkedList before Rotate");
-            Console.WriteLine();
-            linkedList1.PrintList();
-            Console.WriteLine();
-            Console.WriteLine("\t\t\tLinkedList After Rotate K = 3");
-            linkedList1.RotateLeft(3);
-            linkedList1.PrintList();
+            //Console.WriteLine("\t\t\tLinkedList before Rotate");
+            //Console.WriteLine();
+            //linkedList1.PrintList();
+            //Console.WriteLine();
+            //Console.WriteLine("\t\t\tLinkedList After Rotate K = 3");
+            //linkedList1.RotateLeft(3);
+            //linkedList1.PrintList();
 
         }
     }

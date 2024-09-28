@@ -187,7 +187,7 @@ namespace LinkedList
         public void RotateLeft(int K)
         {
             if (head == null || K <= 0 || K > count)
-                return; 
+                return;
 
             Node node1 = head;
             Node node2 = head;
@@ -200,11 +200,11 @@ namespace LinkedList
                 i++;
             }
 
- 
+
             head = node1;
         }
 
-       
+
         //public void RotateLeft(int K)
         //{
         //    if (head == null || head.Next == null || K == 0)
