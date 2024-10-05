@@ -9,12 +9,12 @@ namespace SumLeafTest
         {
             // Arrange
             var tree = new BinaryTree(3);
-            tree.Root.right = new TNode(3);
-            tree.Root.right.left = new TNode(4);
-            tree.Root.right.right = new TNode(5);
-            tree.Root.left = new TNode(2);
-            tree.Root.left.right = new TNode(6);
-            tree.Root.left.left = new TNode(1);
+            tree.Root.Right = new TNode(3);
+            tree.Root.Right.Left = new TNode(4);
+            tree.Root.Right.Right = new TNode(5);
+            tree.Root.Left = new TNode(2);
+            tree.Root.Left.Right = new TNode(6);
+            tree.Root.Left.Left = new TNode(1);
             
 
 
@@ -30,12 +30,12 @@ namespace SumLeafTest
         {
             // Arrange
             var tree = new BinaryTree(-3);
-            tree.Root.right = new TNode(-3);
-            tree.Root.right.left = new TNode(-4);
-            tree.Root.right.right = new TNode(-5);
-            tree.Root.left = new TNode(-2);
-            tree.Root.left.right = new TNode(-6);
-            tree.Root.left.left = new TNode(-1);
+            tree.Root.Right = new TNode(-3);
+            tree.Root.Right.Left = new TNode(-4);
+            tree.Root.Right.Right = new TNode(-5);
+            tree.Root.Left = new TNode(-2);
+            tree.Root.Left.Right = new TNode(-6);
+            tree.Root.Left.Left = new TNode(-1);
 
             // Act
             int result = tree.LeafSum();

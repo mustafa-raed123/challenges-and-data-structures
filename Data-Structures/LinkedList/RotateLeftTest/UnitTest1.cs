@@ -19,11 +19,11 @@ namespace RotateLeftTest
             list.RotateLeft(0);
 
             // Assert
-            Assert.Equal(1, list.head.Data);
-            Assert.Equal(2, list.head.Next.Data);
-            Assert.Equal(3, list.head.Next.Next.Data);
-            Assert.Equal(4, list.head.Next.Next.Next.Data);
-            Assert.Equal(5, list.head.Next.Next.Next.Next.Data);
+            Assert.Equal(1, list.head.data);
+            Assert.Equal(2, list.head.next.data);
+            Assert.Equal(3, list.head.next.next.data);
+            Assert.Equal(4, list.head.next.next.next.data);
+            Assert.Equal(5, list.head.next.next.next.next.data);
         }
 
 
@@ -42,11 +42,11 @@ namespace RotateLeftTest
             list.RotateLeft(7);
 
             // Assert
-            Assert.Equal(1, list.head.Data);
-            Assert.Equal(2, list.head.Next.Data);
-            Assert.Equal(3, list.head.Next.Next.Data);
-            Assert.Equal(4, list.head.Next.Next.Next.Data);
-            Assert.Equal(5, list.head.Next.Next.Next.Next.Data);
+            Assert.Equal(1, list.head.data);
+            Assert.Equal(2, list.head.next.data);
+            Assert.Equal(3, list.head.next.next.data);
+            Assert.Equal(4, list.head.next.next.next.data);
+            Assert.Equal(5, list.head.next.next.next.next.data);
         }
     }
 }

@@ -17,7 +17,7 @@ namespace linkedListTest
             linklist.DeleteFromTail();
            
 
-            Assert.Equal(6,linklist.tail.Data );
+            Assert.Equal(6,linklist.tail.data );
             
         }
         [Fact]
@@ -32,10 +32,10 @@ namespace linkedListTest
 
             linklist.Remove(3);
 
-            Node current = linklist.head;
-            Assert.Equal(1, current.Data );
-            Assert.Equal(2, current.Next.Data );
-            Assert.Equal(6, current.Next.Next.Data );
+            node current = linklist.head;
+            Assert.Equal(1, current.data );
+            Assert.Equal(2, current.next.data );
+            Assert.Equal(6, current.next.next.data );
         }
         [Fact]
         public void PrintList()

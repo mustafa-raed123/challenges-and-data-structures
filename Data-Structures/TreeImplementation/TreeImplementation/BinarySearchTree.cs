@@ -17,11 +17,11 @@ public class BinarySearchTree : BinaryTree
 
         if (data < node.data)
         {
-            node.left = Insert(node.left, data);
+            node.Left = Insert(node.Left, data);
         }
         else if (data > node.data)
         {
-            node.right = Insert(node.right, data);
+            node.Right = Insert(node.Right, data);
         }
 
         return node;
@@ -35,9 +35,9 @@ public class BinarySearchTree : BinaryTree
             return node;
 
         if (data < node.data)
-            return Search(node.left, data);
+            return Search(node.Left, data);
         else
-            return Search(node.right, data);
+            return Search(node.Right, data);
     }
 
     public void Remove(int data) => Root = Remove(Root, data);
@@ -48,22 +48,22 @@ public class BinarySearchTree : BinaryTree
 
         if (data < node.data)
         {
-            node.left = Remove(node.left, data);
+            node.Left = Remove(node.Left, data);
         }
         else if (data > node.data)
         {
-            node.right = Remove(node.right, data);
+            node.Right = Remove(node.Right, data);
         }
         else
         {
             // Node with only one child or no child
-            if (node.left == null) return node.right;
-            if (node.right == null) return node.left;
+            if (node.Left == null) return node.Right;
+            if (node.Right == null) return node.Left;
 
             // Node with two children: Get the inorder successor (smallest in the right subtree)
-            TNode minNode = FindMin(node.right);
+            TNode minNode = FindMin(node.Right);
             node.data = minNode.data;
-            node.right = Remove(node.right, minNode.data);
+            node.Right = Remove(node.Right, minNode.data);
         }
 
         return node;
@@ -71,11 +71,12 @@ public class BinarySearchTree : BinaryTree
 
     private TNode FindMin(TNode node)
     {
-        while (node.left != null)
+        while (node.Left != null)
         {
-            node = node.left;
+            node = node.Left;
         }
 
         return node;
     }
+
 }

@@ -24,9 +24,12 @@
             LinkedLists linkedList1 = new LinkedLists();
             linkedList1.InsertToTail(8);
             linkedList1.InsertToTail(3);
-            linkedList1.InsertToTail(1);
             linkedList1.InsertToTail(4);
             linkedList1.InsertToTail(4);
+            linkedList1.InsertToTail(3);
+            linkedList1.InsertToTail(8);
+            Console.WriteLine(linkedList1.IsPalindrome());
+
             //linkedList1.InsertToTail(5);
             //linkedList1.InsertToTail(6);
             //linkedList1.InsertToTail(23);
@@ -38,9 +41,19 @@
             // linkedList1.RemoveFromPos(6);
             //  linkedList1.DeleteEvenNumber();
             //linkedList1.repetition();
-           // linkedList1.RepetitionEvenNumberInLastList();
-           linkedList1.Reverse();
+            // linkedList1.RepetitionEvenNumberInLastList();
+            // linkedList1.Reverse();
+            // linkedList1.PrintList();
+            // linkedList1.PrintMiddleNode();
+            //  linkedList1.ReversLinkedList();
+            //  linkedList1.FindFromEnd(11);
             linkedList1.PrintList();
+
+          //  linkedList1.DeleteLastOccurrence(4);
+          linkedList1.RemoveMiddleNode();
+            linkedList1.PrintList();
+           // linkedList1.Rotate3(3);
+         //   linkedList1.PrintList();
             //LinkedLists linkedList2 = new LinkedLists();
             //linkedList2.InsertToTail(2);
             //linkedList2.InsertToTail(10);
