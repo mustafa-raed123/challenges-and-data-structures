@@ -20,25 +20,25 @@ namespace TreeImplementation
             if (node == null) return;
 
             Print(node.data, ConsoleColor.Green, "->");
-            Pre_Order(node.left);
-            Pre_Order(node.right);
+            Pre_Order(node.Left);
+            Pre_Order(node.Right);
         }
 
         public void In_Order(TNode node)
         {
             if (node == null) return;
 
-            In_Order(node.left);
+            In_Order(node.Left);
             Print(node.data, ConsoleColor.Green, "->");
-            In_Order(node.right);
+            In_Order(node.Right);
         }
 
         public void Post_Order(TNode node)
         {
             if (node == null) return;
 
-            Post_Order(node.left);
-            Post_Order(node.right);
+            Post_Order(node.Left);
+            Post_Order(node.Right);
             Print(node.data, ConsoleColor.Green, "->");
         }
 
@@ -73,13 +73,13 @@ namespace TreeImplementation
             }
 
            
-            TNode temp = node.left;
-            node.left = node.right;
-            node.right = temp;
+            TNode temp = node.Left;
+            node.Left = node.Right;
+            node.Right = temp;
 
             
-            MirrorHelper(node.left);
-            MirrorHelper(node.right);
+            MirrorHelper(node.Left);
+            MirrorHelper(node.Right);
         }
 
         public int? SecondMax(TNode node)
@@ -103,7 +103,7 @@ namespace TreeImplementation
         {
             if (node == null) return;
 
-            TraverseTree(node.left, ref max, ref secondmax);
+            TraverseTree(node.Left, ref max, ref secondmax);
 
             if (max == null || node.data > max)
             {
@@ -115,7 +115,7 @@ namespace TreeImplementation
                 secondmax = node.data;
             }
 
-            TraverseTree(node.right, ref max, ref secondmax);
+            TraverseTree(node.Right, ref max, ref secondmax);
         }
         public int LeafSum()
         {
@@ -132,13 +132,13 @@ namespace TreeImplementation
             }
 
            
-            if (node.left == null && node.right == null)
+            if (node.Left == null && node.Right == null)
             {
                 return node.data;
             }
 
             
-            return LeafSumHelper(node.left) + LeafSumHelper(node.right);
+            return LeafSumHelper(node.Left) + LeafSumHelper(node.Right);
         }
         public List<int> LargestValueEachLevel()
         {
@@ -161,8 +161,8 @@ namespace TreeImplementation
                         maxAtLevel = currentNode.data;
                     }
 
-                    if (currentNode.left != null) queue.Enqueue(currentNode.left);
-                    if (currentNode.right != null) queue.Enqueue(currentNode.right);
+                    if (currentNode.Left != null) queue.Enqueue(currentNode.Left);
+                    if (currentNode.Right != null) queue.Enqueue(currentNode.Right);
                 }
 
                 largestValues.Add(maxAtLevel);
@@ -185,8 +185,39 @@ namespace TreeImplementation
                 return;
             if (level == rightViewNodes.Count)
                 rightViewNodes.Add(node.data);
-            RightViewHelper(node.right, level + 1, rightViewNodes);
-            RightViewHelper(node.left, level + 1, rightViewNodes);
+            RightViewHelper(node.Right, level + 1, rightViewNodes);
+            RightViewHelper(node.Left, level + 1, rightViewNodes);
+        }
+        public int FindMaxLevelNodes()
+        {
+            if (Root == null)
+                throw new Exception("Tree is empty");
+            Queue<TNode> queue = new Queue<TNode>();
+            queue.Enqueue(Root);
+            int level = 0;
+            int maxNodes = 0;
+            int maxLevel = 0;
+            while (queue.Count > 0)
+            {
+                int levelSize = queue.Count;
+                if (levelSize > maxNodes)
+                {
+                    maxNodes = levelSize;
+                    maxLevel = level;
+                }
+
+                for (int i = 0; i < levelSize; i++)
+                {
+                    TNode current = queue.Dequeue();
+
+                    if (current.Left != null)                 
+                        queue.Enqueue(current.Left);       
+                    if (current.Right != null)
+                        queue.Enqueue(current.Right);
+                }
+                level++;
+            }
+            return maxLevel;
         }
     }
     }

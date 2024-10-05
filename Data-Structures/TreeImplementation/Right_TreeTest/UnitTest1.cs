@@ -11,11 +11,11 @@ namespace Right_TreeTest
             // Arrange
             StringBuilder output = new StringBuilder();
             BinaryTree tree = new BinaryTree(2);
-            tree.Root.left = new TNode(3);
-            tree.Root.right = new TNode(5);
-            tree.Root.left.left = new TNode(4);
-            tree.Root.right.right = new TNode(6);
-            tree.Root.left.left.right = new TNode(7);
+            tree.Root.Left = new TNode(3);
+            tree.Root.Right = new TNode(5);
+            tree.Root.Left.Left = new TNode(4);
+            tree.Root.Right.Right = new TNode(6);
+            tree.Root.Left.Left.Right = new TNode(7);
 
             // Act
             using (StringWriter sw = new StringWriter())
@@ -32,8 +32,8 @@ namespace Right_TreeTest
         {
             // Arrange
             BinaryTree tree = new BinaryTree(1);
-            tree.Root.right = new TNode(2);
-            tree.Root.right.right = new TNode(3);
+            tree.Root.Right = new TNode(2);
+            tree.Root.Right.Right = new TNode(3);
 
             // Act
             using (StringWriter sw = new StringWriter())

@@ -5,31 +5,60 @@ namespace RemoveDuplicateTest
 {
     public class UnitTest1
     {
-        [Theory]
-        [InlineData(new int[] { 1, 2, 3, 6 }, new int[] { 1, 2, 3, 6 })]
-        [InlineData(new int[] { 1, 2, 3, 3, 6, 6, 7 }, new int[] { 1, 2, 3, 6, 7 })]
-        [InlineData(new int[] { 1, 1, 1, 1, 1, 1, 1 }, new int[] { 1 })]
-        public void RemoveDublicateTests(int[] input, int[] expected)
+        [Fact]
+        public void RemoveDublicate()
+        {
+            //Arrange
+            LinkedLists linkedLists = new LinkedLists();
+            linkedLists.InsertToTail(2);
+            linkedLists.InsertToTail(3);
+            linkedLists.InsertToTail(2);
+            linkedLists.InsertToTail(4);
+            //act
+            linkedLists.RemoveDublicates();
+            //Assert
+            Assert.Equal(2, linkedLists.head.data);
+            Assert.Equal(3, linkedLists.head.next.data);
+            Assert.Equal(4, linkedLists.head.next.next.data);
+        }
+        [Fact]
+        public void AddFromPos()
         {
             // Arrange
-            LinkedLists linklist = new LinkedLists();
-            foreach (var value in input)
-            {
-                linklist.InsertToTail(value);
-            }
-
+             LinkedLists linkedLists1 = new LinkedLists();
+            linkedLists1.InsertToTail(1);
+            linkedLists1.InsertToTail(2);
+            linkedLists1.InsertToTail(3);
+            linkedLists1.InsertToTail(2);
+            linkedLists1.InsertToTail(4);
             // Act
-            linklist.RemoveDublicate();
-            Node current = linklist.head;
-            List<int> actual = new List<int>();
-            while (current != null)
-            {
-                actual.Add(current.Data);
-                current = current.Next;
-            }
+            linkedLists1.InserFromPos(10, 3);
+            // Assert
+            Assert.Equal(1, linkedLists1.head.data);
+            Assert.Equal(2, linkedLists1.head.next.data);
+            Assert.Equal(10, linkedLists1.head.next.next.data);
+            Assert.Equal(3, linkedLists1.head.next.next.next.data);
+
+
+
+        }
+        [Fact]
+        public void AddFromPosa()
+        {
+            // Arrange
+            LinkedLists linkedLists1 = new LinkedLists();
+           
+            // Act
+            linkedLists1.InserFromPos(10, 3);
 
             // Assert
-            Assert.Equal(expected, actual);
+            Assert.True(  linkedLists1.head.data == 0)
+           ;
+
+
+
         }
+
+
     }
 }

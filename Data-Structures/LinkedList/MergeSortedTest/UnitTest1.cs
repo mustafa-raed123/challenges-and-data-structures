@@ -20,10 +20,10 @@ namespace MergeSortedTest
 
             linkedList1.MergeSortedLists(linkedList2);
             Assert.NotNull(linkedList1.head);
-            Assert.Equal(1, linkedList1.head.Data);
-            Assert.Equal(4, linkedList1.head.Next.Data);
-            Assert.Equal(6, linkedList1.head.Next.Next.Data);
-            Assert.Null(linkedList1.head.Next.Next.Next);
+            Assert.Equal(1, linkedList1.head.data);
+            Assert.Equal(4, linkedList1.head.next.data);
+            Assert.Equal(6, linkedList1.head.next.next.data);
+            Assert.Null(linkedList1.head.next.next.next);
 
         }
         [Fact]
@@ -56,13 +56,13 @@ namespace MergeSortedTest
 
             linkedList1.MergeSortedLists(linkedList2);
             Assert.NotNull(linkedList1.head);
-            Assert.Equal(2, linkedList1.head.Data);
-            Assert.Equal(3, linkedList1.head.Next.Data);
-            Assert.Equal(5, linkedList1.head.Next.Next.Data);
-            Assert.Equal(10, linkedList1.head.Next.Next.Next.Data);
-            Assert.Equal(15, linkedList1.head.Next.Next.Next.Next.Data);
-            Assert.Equal(20, linkedList1.head.Next.Next.Next.Next.Next.Data);
-            Assert.Null(linkedList1.head.Next.Next.Next.Next.Next.Next);
+            Assert.Equal(2, linkedList1.head.data);
+            Assert.Equal(3, linkedList1.head.next.data);
+            Assert.Equal(5, linkedList1.head.next.next.data);
+            Assert.Equal(10, linkedList1.head.next.next.next.data);
+            Assert.Equal(15, linkedList1.head.next.next.next.next.data);
+            Assert.Equal(20, linkedList1.head.next.next.next.next.next.data);
+            Assert.Null(linkedList1.head.next.next.next.next.next.next);
 
         }
     }

@@ -9,13 +9,13 @@ namespace TreeImplementation
     public class TNode
     {
        public int data;
-        public TNode right;
-        public  TNode left;
+        public TNode Right;
+        public  TNode Left;
         public TNode(int data)
         {
             this.data = data;
-            right = null;
-            left = null;
+            Right = null;
+            Left = null;
         }
     }
 }

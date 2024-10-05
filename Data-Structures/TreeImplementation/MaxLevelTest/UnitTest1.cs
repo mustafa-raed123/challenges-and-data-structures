@@ -9,12 +9,12 @@ namespace MaxLevelTest
         {
             // Arrange
             var binaryTree = new BinaryTree(10);
-            binaryTree.Root.left = new TNode(7);
-            binaryTree.Root.right = new TNode(15);
-            binaryTree.Root.left.left = new TNode(5);
-            binaryTree.Root.left.right = new TNode(9);
-            binaryTree.Root.right.left = new TNode(11);
-            binaryTree.Root.right.right = new TNode(20);
+            binaryTree.Root.Left = new TNode(7);
+            binaryTree.Root.Right = new TNode(15);
+            binaryTree.Root.Left.Left = new TNode(5);
+            binaryTree.Root.Left.Right = new TNode(9);
+            binaryTree.Root.Right.Left = new TNode(11);
+            binaryTree.Root.Right.Right = new TNode(20);
 
             // Act
             var largestValues = binaryTree.LargestValueEachLevel();
