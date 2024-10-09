@@ -92,3 +92,7 @@
 
 # Data Structure-BinaryTree :  *[MaxLevelNodes](./Data-Structures/TreeImplementation/TreeImplementation/MaxLevelNodes/README.md)*
 
+---
+
+# Data Structure-BinaryTree :  *[MinDepth](./Data-Structures/TreeImplementation/TreeImplementation/MinDepth/README.md)*
+

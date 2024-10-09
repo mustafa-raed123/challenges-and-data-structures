@@ -219,5 +219,21 @@ namespace TreeImplementation
             }
             return maxLevel;
         }
+        public int MinDepth(TNode Root)
+        {
+            if (Root == null) return 0;
+            if (Root.Left == null && Root.Right == null)
+                return 1;
+            if (Root.Left != null && Root.Right == null)
+                return 1 + MinDepth(Root.Left);
+            if (Root.Left == null && Root.Right != null)
+                return 1 + MinDepth(Root.Right);
+
+            int leftNode = 1 + MinDepth(Root.Left);
+            int rightNode = 1 + MinDepth(Root.Right);
+            return leftNode < rightNode ? leftNode : rightNode;
+
+        }
+
     }
-    }
+}
