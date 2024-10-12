@@ -234,6 +234,73 @@ namespace TreeImplementation
             return leftNode < rightNode ? leftNode : rightNode;
 
         }
+        public void ConvertBtToBst(TNode root)
+        {
+
+            Console.WriteLine("Binary  tree Before Convert to Bst ");
+            
+            In_Order(root);
+            List<int> nodes = new List<int>();
+            Nodes(root, nodes);        
+            nodes.Sort();   
+            int midIndex = nodes.Count / 2; 
+            TNode newBt = new TNode(nodes[midIndex]); 
+            nodes.RemoveAt(midIndex); 
+
+            foreach (var item in nodes)
+            {
+                AddToBst(ref newBt, item);
+            }
+            Console.WriteLine();
+            Console.WriteLine("Binary tree After Convert to Bst ");
+
+            In_Order(newBt); 
+        }
+
+        public void Nodes(TNode root, List<int> nodes)
+        {
+            if (root == null)
+            {
+                return;
+            }
+            nodes.Add(root.data);
+            Nodes(root.Left, nodes);
+            Nodes(root.Right, nodes);
+        }
+
+        public void AddToBst(ref TNode root, int num)
+        {
+            if (root == null)
+            {
+                root = new TNode(num);
+                return;
+            }
+            TNode temp = root;
+            TNode parent = null;
+
+            while (temp != null)
+            {
+                parent = temp;
+                if (num > temp.data)
+                {
+                    temp = temp.Right;
+                }
+                else
+                {
+                    temp = temp.Left;
+                }
+            }
+
+            TNode newNode = new TNode(num);
+            if (num > parent.data)
+            {
+                parent.Right = newNode;
+            }
+            else
+            {
+                parent.Left = newNode;
+            }
+        }
 
     }
 }

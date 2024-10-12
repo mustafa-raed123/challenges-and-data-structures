@@ -108,14 +108,16 @@ namespace TreeImplementation
             Btree.Root.Right.Right = new TNode(6);
             Btree.Root.Left.Left.Left = new TNode(7);
             Btree.Root.Right.Right.Right = new TNode(10);
-            Btree.Root.Right.Right.Right.Right = new TNode(10);
+            //Btree.Root.Right.Right.Right.Right = new TNode(10);
         //    Btree.Root.Left.Right.Right = new TNode(19);
             // Btree.Root.Left.Left.Left = new TNode(7);
 
 
             //   int maxLevel = Btree.FindMaxLevelNodes();
-            int minDepth = Btree.MinDepth(Btree.Root);
-            Console.WriteLine("the Min Depth Nodes : " + minDepth);
+            //int minDepth = Btree.MinDepth(Btree.Root);
+            //Console.WriteLine("the Min Depth Nodes : " + minDepth);
+            Btree.ConvertBtToBst(Btree.Root);
+
         }
     }
 }
