@@ -96,3 +96,7 @@
 
 # Data Structure-BinaryTree :  *[MinDepth](./Data-Structures/TreeImplementation/TreeImplementation/MinDepth/README.md)*
 
+---
+
+# Data Structure-BinaryTree :  *[ConvertToBST](./Data-Structures/TreeImplementation/TreeImplementation/ConvertBtTOBst/README.md)*
+
